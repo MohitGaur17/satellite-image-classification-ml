@@ -1,0 +1,61 @@
+<VRTDataset rasterXSize="7731" rasterYSize="7861">
+  <SRS dataAxisToSRSAxisMapping="1,2">PROJCS["WGS 84 / UTM zone 43N",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",75],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","32643"]]</SRS>
+  <GeoTransform>  1.3858500000000000e+05,  3.0000000000000000e+01,  0.0000000000000000e+00,  2.9946150000000000e+06,  0.0000000000000000e+00, -3.0000000000000000e+01</GeoTransform>
+  <VRTRasterBand dataType="UInt16" band="1">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">68.48</MDI>
+      <MDI key="STATISTICS_MINIMUM">9499</MDI>
+      <MDI key="STATISTICS_MAXIMUM">17886</MDI>
+      <MDI key="STATISTICS_MEAN">14652.213991366</MDI>
+      <MDI key="STATISTICS_STDDEV">1111.3700241068</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="0">D:\Study\#Code Files\#Internships\04 Internship DRDO\Satellite Image Classification Using Machine Learning Techniques\Raw Data\Landsat 9 March 2025\LC09_L2SP_149042_20250324_20250325_02_T1\LC09_L2SP_149042_20250324_20250325_02_T1_SR_B4.TIF</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="7731" RasterYSize="7861" DataType="UInt16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <DstRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="UInt16" band="2">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">68.48</MDI>
+      <MDI key="STATISTICS_MINIMUM">9554</MDI>
+      <MDI key="STATISTICS_MAXIMUM">15047</MDI>
+      <MDI key="STATISTICS_MEAN">12822.044544741</MDI>
+      <MDI key="STATISTICS_STDDEV">850.61302080519</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="0">D:\Study\#Code Files\#Internships\04 Internship DRDO\Satellite Image Classification Using Machine Learning Techniques\Raw Data\Landsat 9 March 2025\LC09_L2SP_149042_20250324_20250325_02_T1\LC09_L2SP_149042_20250324_20250325_02_T1_SR_B3.TIF</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="7731" RasterYSize="7861" DataType="UInt16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <DstRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="UInt16" band="3">
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">68.48</MDI>
+      <MDI key="STATISTICS_MINIMUM">8006</MDI>
+      <MDI key="STATISTICS_MAXIMUM">12656</MDI>
+      <MDI key="STATISTICS_MEAN">10828.457908163</MDI>
+      <MDI key="STATISTICS_STDDEV">572.23995279397</MDI>
+    </Metadata>
+    <NoDataValue>0</NoDataValue>
+    <ComplexSource resampling="nearest">
+      <SourceFilename relativeToVRT="0">D:\Study\#Code Files\#Internships\04 Internship DRDO\Satellite Image Classification Using Machine Learning Techniques\Raw Data\Landsat 9 March 2025\LC09_L2SP_149042_20250324_20250325_02_T1\LC09_L2SP_149042_20250324_20250325_02_T1_SR_B2.TIF</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="7731" RasterYSize="7861" DataType="UInt16" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <DstRect xOff="0" yOff="0" xSize="7731" ySize="7861" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
