@@ -43,6 +43,8 @@ These features make the region suitable for remote sensing and image classificat
 
 **Source:** USGS Earth Explorer
 
+**Raw Data Download :** [Download Here](https://drive.google.com/drive/folders/15g_Pc1WvXukniYDe2-pWzDZiFauS3iKF?usp=sharing)
+
 **Spatial Resolution:** 30 m
 
 **Coordinate Reference System (CRS):**
@@ -56,18 +58,6 @@ WGS 84 / UTM Zone 43N (EPSG:32643)
 
 * QGIS
 
-### Programming Language
-
-* Python
-
-### Python Libraries
-
-* NumPy
-* Pandas
-* Matplotlib
-* Rasterio
-* GDAL
-* Scikit-learn
 
 ### Data Source
 

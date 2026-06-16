@@ -42,6 +42,10 @@ ENV/
 *.aux.xml
 *.ovr
 
+# Raw Data Archives
+
+Raw Data/
+
 # ==================================
 
 # IDE Files
