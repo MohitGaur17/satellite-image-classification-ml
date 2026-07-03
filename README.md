@@ -1,10 +1,10 @@
-# Satellite Image Classification Using Machine Learning
+# Satellite Image Classification Using Machine Learning Techniques
 
 ## Overview
 
-This project focuses on the classification and analysis of Landsat 9 satellite imagery of the Jodhpur region, Rajasthan, India, using Geographic Information System (GIS) tools and Machine Learning techniques.
+This project focuses on the classification and analysis of Landsat 9 satellite imagery of the Jodhpur region, Rajasthan, India, using Geographic Information System (GIS) tools and machine learning techniques.
 
-The workflow includes satellite data acquisition, image preprocessing, RGB composite generation, study area subsetting, vegetation analysis using NDVI (Normalized Difference Vegetation Index), and land-cover classification. The project is being developed as part of an internship focused on Remote Sensing, GIS, and Machine Learning applications.
+The workflow includes satellite data acquisition, image preprocessing, RGB composite generation, study area subsetting, vegetation analysis using NDVI (Normalized Difference Vegetation Index), and land-cover classification. The project is being developed as part of an internship focused on remote sensing, GIS, and machine learning applications.
 
 ---
 
@@ -58,7 +58,6 @@ WGS 84 / UTM Zone 43N (EPSG:32643)
 
 * QGIS
 
-
 ### Data Source
 
 * USGS Earth Explorer
@@ -83,39 +82,34 @@ WGS 84 / UTM Zone 43N (EPSG:32643)
 ## Project Structure
 
 ```text
-satellite-image-classification-ml
-│
-├── Raw Data
-│   ├── Landsat 9 March 2025
-│   └── Landsat 9 October 2025
-│
-├── QGIS Project
-│   ├── RGB Composite
-│   ├── Subset Data
-│   └── Jodhpur_Project.qgz
-│
-├── NDVI
-│
-├── Classification
-│
-├── Python
-│   ├── Scripts
-│   └── Outputs
-│
-└── Report
-
+Satellite Image Classification Using Machine Learning Techniques
+├── README.md
+├── Python/
+├── QGIS Project/
+│   ├── AOI/
+│   ├── Classification/
+│   │   ├── Accuracy_Assessment/
+│   │   ├── Classification_Output/
+│   │   ├── Classifier/
+│   │   ├── Spectral_Signatures/
+│   │   ├── Training_Data/
+│   │   └── Validation_Data/
+│   ├── NDVI/
+│   ├── RGB Composite/
+│   └── Subset Data/
+├── Raw Data/
+└── Report/
 ```
 
 ### Folder Description
 
 | Folder         | Description                                                                     |
 | -------------- | ------------------------------------------------------------------------------- |
-| Raw Data       | Contains downloaded Landsat 9 satellite imagery used for analysis.              |
-| QGIS Project   | Stores QGIS project files, RGB composites, and study area subsets.              |
-| NDVI           | Contains NDVI calculations, outputs, and vegetation analysis results.           |
-| Classification | Stores image classification datasets and classification outputs.                |
-| Python         | Contains Python scripts and generated outputs used for processing and analysis. |
-| Report         | Contains internship report chapters and final project documentation.            |
+| Raw Data       | Contains the original Landsat 9 source data used for the project.              |
+| QGIS Project   | Stores the QGIS project, AOI, RGB composites, NDVI results, and subsets.       |
+| Classification | Contains training, validation, classifier, and classification output assets.   |
+| Python         | Reserved for Python scripts and processing utilities.                          |
+| Report         | Contains the internship report chapters and supporting documentation.          |
 
 
 ---
@@ -139,7 +133,7 @@ The study focuses on identifying and classifying:
 * Vegetation
 * Water Bodies
 * Mining Area
-* Barren Land
+* Other Area / Barren Land
 
 ---
 
