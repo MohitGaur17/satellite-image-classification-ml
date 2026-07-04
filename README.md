@@ -1,161 +1,224 @@
 # Satellite Image Classification Using Machine Learning Techniques
 
+![QGIS](https://img.shields.io/badge/QGIS-3.40-green)
+![Landsat 9](https://img.shields.io/badge/Landsat-9-blue)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange)
+![Remote Sensing](https://img.shields.io/badge/Remote-Sensing-success)
+![Python](https://img.shields.io/badge/Python-In%20Progress-yellow)
+
 ## Overview
 
-This project focuses on the classification and analysis of Landsat 9 satellite imagery of the Jodhpur region, Rajasthan, India, using Geographic Information System (GIS) tools and machine learning techniques.
+This project focuses on land-cover classification and analysis of Landsat 9 satellite imagery for the Jodhpur region, Rajasthan, India, using Geographic Information System (GIS) techniques and Machine Learning algorithms.
 
-The workflow includes satellite data acquisition, image preprocessing, RGB composite generation, study area subsetting, vegetation analysis using NDVI (Normalized Difference Vegetation Index), and land-cover classification. The project is being developed as part of an internship focused on remote sensing, GIS, and machine learning applications.
+The workflow covers the complete remote sensing pipeline including satellite data acquisition, preprocessing, Area of Interest (AOI) extraction, NDVI generation, supervised and unsupervised image classification, accuracy assessment, post-processing, and comparative analysis using the Semi-Automatic Classification Plugin (SCP) in QGIS.
 
----
+The project is being developed as part of a research internship on Remote Sensing, GIS, and Machine Learning.
+
 
 ## Objectives
 
-* Download and process Landsat 9 satellite imagery.
-* Generate RGB composite images for visual interpretation.
-* Create and extract the Area of Interest (AOI).
-* Perform study area subsetting using QGIS.
-* Compute NDVI for vegetation analysis.
-* Classify satellite imagery into major land-cover classes.
-* Analyze spatial distribution of different land-cover features.
-* Apply Machine Learning techniques for image classification.
+- Download and preprocess Landsat 9 satellite imagery.
+- Generate True Color and False Color Composite images.
+- Create the Area of Interest (AOI).
+- Perform study area subsetting.
+- Generate NDVI for vegetation analysis.
+- Perform supervised land-cover classification.
+- Perform unsupervised land-cover classification.
+- Evaluate classification accuracy.
+- Compare different machine learning algorithms.
+- Generate land-cover statistics and thematic maps.
 
----
 
 ## Study Area
 
 **Location:** Jodhpur District, Rajasthan, India
 
-The study area was selected due to the presence of diverse land-cover features including:
+The study area contains diverse land-cover types including:
 
-* Built-up Areas
-* Vegetation
-* Water Bodies
-* Mining Areas
-* Barren Land
+- Built-up Area
+- Vegetation
+- Water Bodies
+- Mining Area
+- Other Area / Barren Land
 
-These features make the region suitable for remote sensing and image classification studies.
+The diversity of these land-cover classes makes the region suitable for supervised and unsupervised image classification.
 
----
 
 ## Dataset
 
-**Satellite:** Landsat 9 OLI/TIRS
+**Satellite**
 
-**Source:** USGS Earth Explorer
+- Landsat 9 OLI/TIRS
 
-**Raw Data Download :** [Download Here](https://drive.google.com/drive/folders/15g_Pc1WvXukniYDe2-pWzDZiFauS3iKF?usp=sharing)
+**Source**
 
-**Spatial Resolution:** 30 m
+- USGS Earth Explorer
 
-**Coordinate Reference System (CRS):**
+**Raw Data**
+
+https://drive.google.com/drive/folders/15g_Pc1WvXukniYDe2-pWzDZiFauS3iKF?usp=sharing
+
+**Spatial Resolution**
+
+30 m
+
+**Coordinate Reference System**
+
 WGS 84 / UTM Zone 43N (EPSG:32643)
 
----
 
-## Software and Tools Used
+## Software & Tools
 
-### GIS Software
+### GIS
 
-* QGIS
+- QGIS
+- Semi-Automatic Classification Plugin (SCP)
 
 ### Data Source
 
-* USGS Earth Explorer
+- USGS Earth Explorer
 
----
+
+## Machine Learning Techniques Used
+
+### Supervised Classification
+
+- Maximum Likelihood Classification
+- Random Forest Classification
+
+### Unsupervised Classification
+
+- K-Means Clustering
+
 
 ## Project Workflow
 
-1. Selection of Study Area
-2. Downloading Landsat 9 Satellite Data
-3. Data Organization and Preprocessing
-4. Loading Raster Data into QGIS
-5. RGB Composite Generation
-6. Area of Interest (AOI) Creation
-7. Study Area Subsetting
-8. NDVI Computation
-9. Image Classification
-10. Result Analysis and Interpretation
+1. Landsat 9 Data Download
+2. Data Organization
+3. RGB Composite Generation
+4. False Color Composite Generation
+5. AOI Creation
+6. Study Area Subsetting
+7. NDVI Computation
+8. ROI Collection
+9. Maximum Likelihood Classification
+10. Random Forest Classification
+11. K-Means Clustering
+12. Accuracy Assessment
+13. Sieve Filtering
+14. Classification Report Generation
+15. Classification to Vector Conversion
+16. Cross Classification
+17. Comparative Analysis
 
----
 
 ## Project Structure
 
 ```text
 Satellite Image Classification Using Machine Learning Techniques
+│
 ├── README.md
 ├── Python/
+│
 ├── QGIS Project/
+│   ├── Jodhpur_Project.qgz
 │   ├── AOI/
 │   ├── Classification/
 │   │   ├── Accuracy_Assessment/
 │   │   ├── Classification_Output/
+│   │   │   ├── CrossClassification/
+│   │   │   ├── KMeans/
+│   │   │   ├── MaximumLikelihood/
+│   │   │   └── RandomForest/
 │   │   ├── Classifier/
+│   │   ├── PCA/
 │   │   ├── Spectral_Signatures/
 │   │   ├── Training_Data/
 │   │   └── Validation_Data/
+│   │
 │   ├── NDVI/
 │   ├── RGB Composite/
 │   └── Subset Data/
+│
 ├── Raw Data/
 └── Report/
 ```
 
-### Folder Description
+## Implemented Outputs
 
-| Folder         | Description                                                                     |
-| -------------- | ------------------------------------------------------------------------------- |
-| Raw Data       | Contains the original Landsat 9 source data used for the project.              |
-| QGIS Project   | Stores the QGIS project, AOI, RGB composites, NDVI results, and subsets.       |
-| Classification | Contains training, validation, classifier, and classification output assets.   |
-| Python         | Reserved for Python scripts and processing utilities.                          |
-| Report         | Contains the internship report chapters and supporting documentation.          |
+- True Color Composite (RGB)
+- False Color Composite (FCC)
+- Area of Interest (AOI)
+- Study Area Subset
+- NDVI Map
+- Maximum Likelihood Classification
+- Random Forest Classification
+- K-Means Classification
+- Accuracy Assessment
+- Confusion Matrix
+- Kappa Coefficient
+- Classification Reports
+- Sieve Filtered Classification
+- Classification to Vector
+- Cross Classification
 
-
----
-
-## Expected Outputs
-
-* RGB Composite Image
-* Area of Interest (AOI)
-* Study Area Subset
-* NDVI Map
-* Classified Land-Cover Map
-* Statistical Analysis of Land-Cover Classes
-
----
 
 ## Land-Cover Classes
 
-The study focuses on identifying and classifying:
+The classified map contains five land-cover classes:
 
-* Built-up Area
-* Vegetation
-* Water Bodies
-* Mining Area
-* Other Area / Barren Land
+| Class ID | Land-Cover Class |
+|----------|------------------|
+| 1 | Built-up Area |
+| 2 | Vegetation |
+| 3 | Water Bodies |
+| 4 | Mining Area |
+| 5 | Other Area / Barren Land |
 
----
 
-## Future Work
+## Classification Techniques Comparison
 
-* Advanced Machine Learning Classification
-* Accuracy Assessment
-* Change Detection Analysis
-* Deep Learning-based Remote Sensing Applications
-* Multi-temporal Satellite Image Analysis
+| Method | Type |
+|---------|------|
+| Maximum Likelihood | Supervised |
+| Random Forest | Supervised Machine Learning |
+| K-Means | Unsupervised Machine Learning |
 
----
+
+## Repository Status
+
+### Completed
+
+- Landsat Data Download
+- RGB & False Color Composite
+- AOI Generation
+- Study Area Subsetting
+- NDVI Generation
+- ROI Creation
+- Maximum Likelihood Classification
+- Random Forest Classification
+- K-Means Clustering
+- Accuracy Assessment
+- Classification Report
+- Sieve Filtering
+- Classification to Vector
+- Cross Classification
+
+### In Progress
+
+- Python Implementation
+- Comparative Analysis (QGIS vs Python)
+- Final Report
+
 
 ## Author
 
 **Mohit Gaur**
-
 B.E. Information Technology
 MBM University, Jodhpur
 
----
 
 ## License
 
 This project is intended for educational, research, and internship purposes.
+
