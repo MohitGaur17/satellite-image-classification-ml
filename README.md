@@ -221,4 +221,3 @@ MBM University, Jodhpur
 ## License
 
 This project is intended for educational, research, and internship purposes.
-
