@@ -1,6 +1,6 @@
 # Satellite Image Classification Using Machine Learning Techniques
 
-![QGIS](https://img.shields.io/badge/QGIS-3.40-green)
+![QGIS](https://img.shields.io/badge/QGIS-3.44-green)
 ![Landsat 9](https://img.shields.io/badge/Landsat-9-blue)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange)
 ![Remote Sensing](https://img.shields.io/badge/Remote-Sensing-success)
@@ -27,6 +27,7 @@ The project is being developed as part of a research internship on Remote Sensin
 - Evaluate classification accuracy.
 - Compare different machine learning algorithms.
 - Generate land-cover statistics and thematic maps.
+- Compare QGIS and Python implementations.
 
 
 ## Study Area
@@ -74,10 +75,6 @@ WGS 84 / UTM Zone 43N (EPSG:32643)
 - QGIS
 - Semi-Automatic Classification Plugin (SCP)
 
-### Data Source
-
-- USGS Earth Explorer
-
 
 ## Machine Learning Techniques Used
 
@@ -94,22 +91,25 @@ WGS 84 / UTM Zone 43N (EPSG:32643)
 ## Project Workflow
 
 1. Landsat 9 Data Download
-2. Data Organization
-3. RGB Composite Generation
-4. False Color Composite Generation
-5. AOI Creation
-6. Study Area Subsetting
-7. NDVI Computation
-8. ROI Collection
-9. Maximum Likelihood Classification
-10. Random Forest Classification
-11. K-Means Clustering
-12. Accuracy Assessment
-13. Sieve Filtering
-14. Classification Report Generation
-15. Classification to Vector Conversion
-16. Cross Classification
-17. Comparative Analysis
+2. Load Landsat Bands into QGIS
+3. Study Area (AOI) Subsetting
+4. True Color Composite (4-3-2)
+5. False Color Composite (5-4-3)
+6. NDVI Generation
+7. SCP Configuration
+8. Band Set Creation
+9. ROI Collection
+10. Spectral Signature Analysis
+11. Maximum Likelihood Classification
+12. Random Forest Classification
+13. K-Means Clustering
+14. Accuracy Assessment
+15. Classification Report
+16. Classification to Vector
+17. Sieve Filtering
+18. Cross Classification
+19. Comparative Analysis
+20. Final Land Cover Map
 
 
 ## Project Structure
@@ -136,6 +136,7 @@ Satellite Image Classification Using Machine Learning Techniques
 │   │   ├── Training_Data/
 │   │   └── Validation_Data/
 │   │
+│   ├── Maps/
 │   ├── NDVI/
 │   ├── RGB Composite/
 │   └── Subset Data/
@@ -146,10 +147,10 @@ Satellite Image Classification Using Machine Learning Techniques
 
 ## Implemented Outputs
 
-- True Color Composite (RGB)
-- False Color Composite (FCC)
 - Area of Interest (AOI)
 - Study Area Subset
+- True Color Composite (RGB)
+- False Color Composite (FCC)
 - NDVI Map
 - Maximum Likelihood Classification
 - Random Forest Classification
@@ -161,6 +162,9 @@ Satellite Image Classification Using Machine Learning Techniques
 - Sieve Filtered Classification
 - Classification to Vector
 - Cross Classification
+- Spectral Signature Analysis
+- Land-Cover Statistics
+- Publication-Quality Maps
 
 
 ## Land-Cover Classes
@@ -185,14 +189,26 @@ The classified map contains five land-cover classes:
 | K-Means | Unsupervised Machine Learning |
 
 
+## Results
+
+The supervised classification algorithms produced highly accurate land-cover maps of the study area.
+
+| Algorithm | Overall Accuracy |
+|------------|----------------:|
+| Maximum Likelihood (Sieved) | 94.93% |
+| Random Forest (Sieved) | 95.29% |
+
+Random Forest achieved the highest overall classification accuracy and produced the most reliable land-cover map.
+
+
 ## Repository Status
 
 ### Completed
 
 - Landsat Data Download
-- RGB & False Color Composite
 - AOI Generation
 - Study Area Subsetting
+- RGB & False Color Composite
 - NDVI Generation
 - ROI Creation
 - Maximum Likelihood Classification
@@ -203,6 +219,7 @@ The classified map contains five land-cover classes:
 - Sieve Filtering
 - Classification to Vector
 - Cross Classification
+- Complete QGIS Workflow
 
 ### In Progress
 
@@ -211,10 +228,20 @@ The classified map contains five land-cover classes:
 - Final Report
 
 
+## References
+
+- USGS Earth Explorer
+- QGIS Documentation
+- Semi-Automatic Classification Plugin (SCP)
+- Landsat 9 Data Users Handbook
+
+
 ## Author
 
 **Mohit Gaur**
+
 B.E. Information Technology
+
 MBM University, Jodhpur
 
 
