@@ -63,7 +63,7 @@ The diversity of these land-cover classes makes the region suitable for supervis
 
 **Raw Data**
 
-    [Download Raw Dataset](https://drive.google.com/drive/folders/15g_Pc1WvXukniYDe2-pWzDZiFauS3iKF?usp=sharing)
+[Download Raw Dataset](https://drive.google.com/drive/folders/15g_Pc1WvXukniYDe2-pWzDZiFauS3iKF?usp=sharing)
 
 **Spatial Resolution**
 
