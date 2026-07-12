@@ -121,7 +121,7 @@ The project implements the complete land-cover classification workflow using bot
 The QGIS workflow was developed using the Semi-Automatic Classification Plugin (SCP) to perform satellite image preprocessing, supervised and unsupervised land-cover classification, post-processing, and accuracy assessment.
 
 <p align="center">
-  <img src="./Report/Satellite Image Processing Workflow (QGIS).png" width="750">
+  <img src="./Report/QGIS Workflow for Land Cover Classification using Machine Learning Techniques.png" width="750">
 </p>
 
 *Figure: Complete QGIS workflow implemented in this project.*
@@ -130,20 +130,15 @@ The workflow includes Landsat 9 preprocessing, AOI extraction, RGB and False Col
 
 ### Python Implementation
 
-The Python implementation is available in [Python/Notebooks/landcover_classification.ipynb](Python/Notebooks/landcover_classification.ipynb).
+The Python workflow was developed using **Rasterio, GeoPandas, NumPy, Matplotlib, Scikit-learn, and Joblib** to perform multispectral image processing, supervised land-cover classification, visualization, and accuracy assessment through a fully automated and reproducible workflow.
 
-The workflow includes:
+<p align="center">
+  <img src="./Report/Python Workflow for Land Cover Classification using Random Forest.png" width="750">
+</p>
 
-1. Load Landsat 9 spectral bands.
-2. Generate True Color Composite (RGB).
-3. Generate False Color Composite (FCC).
-4. Calculate NDVI.
-5. Load training and validation ROIs.
-6. Extract training samples from the raster.
-7. Train the Random Forest classifier.
-8. Generate the land-cover classification raster.
-9. Evaluate classification accuracy using validation ROIs.
-10. Export the classified raster, visualizations, trained model, and accuracy assessment results.
+*Figure: Complete Python workflow implemented in this project.*
+
+The workflow includes loading Landsat 9 subset bands, band stack creation, True Color Composite (RGB) and False Color Composite (FCC) generation, NDVI computation, training and validation ROI preparation, training sample extraction, Random Forest model training, land-cover classification, model persistence, classified raster generation, visualization, accuracy assessment, and export of classification outputs.
 
 
 ## Project Structure
