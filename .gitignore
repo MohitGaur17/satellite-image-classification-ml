@@ -8,6 +8,20 @@
 *.scpx.backup
 
 # ==================================
+# Python / Jupyter Artifacts
+# ==================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ==================================
 # Raster Auxiliary Files
 # ==================================
 
@@ -15,11 +29,16 @@
 *.ovr
 
 # ==================================
+# Python Generated Models
+# ==================================
+
+Python/Outputs/Models/*.pkl
+
+# ==================================
 # Raw Dataset (stored on Google Drive)
 # ==================================
 
 Raw Data/
-
 
 # ==================================
 # Operating System Files
@@ -28,3 +47,4 @@ Raw Data/
 Thumbs.db
 desktop.ini
 .DS_Store
+*.log
