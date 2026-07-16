@@ -314,10 +314,6 @@ The QGIS workflow provides a user-friendly graphical environment for interactive
 - Python Accuracy Assessment Workflow
 - Comparative Analysis (QGIS vs Python)
 
-### In Progress
-
-- Final Report
-
 
 ## References
 
@@ -333,9 +329,9 @@ The QGIS workflow provides a user-friendly graphical environment for interactive
 ## Author
 
 **Mohit Gaur**
-
+<br/>
 B.E. Information Technology
-
+<br/>
 MBM University, Jodhpur
 
 
